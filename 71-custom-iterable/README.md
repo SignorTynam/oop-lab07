@@ -1,19 +1,25 @@
-# INSTRUCTIONS
+# ESERCIZIO 1 - ISTRUZIONI
 
-**Ensure that all parts of the exercise are correct, not just the end of them.**
+| [<< Laboratorio 7](../README.md) | [Esercizio 1 >>](./71-custom-iterable/README.md) |
 
-## Part 1: iterable without policy
+**Assicurati che tutte le parti dell'esercizio siano corrette, non solo la fine di esse.**
 
-1. Implement the `IterableWithPolicy<T>` interface via a generic class with a constructor that takes an array of `T` elements.
-2. Leave the `setIterationPolicy` method empty (for now).
-3. Implement an inner class that implements the `Iterator<T>` interface so that it iterates over the elements of the array given to the constructor.
-4. Implement the `iterator()` method so that it returns an instance of the inner class.
-5. Test the implementation by running the `TestIterablePlain` class.
+## Parte 1: iterabile senza politica
 
-## Part 2: iterable with policy
+1. Implementa l'interfaccia `IterableWithPolicy<T>` tramite una classe generica con un costruttore che prende un array di elementi `T`.
+2. Lascia il metodo `setIterationPolicy` vuoto (per ora).
+3. Implementa una classe interna che implementa l'interfaccia `Iterator<T>` in modo che itera sugli elementi dell'array dato al costruttore.
+4. Implementa il metodo `iterator()` in modo che ritorni un'istanza della classe interna.
+5. Testa l'implementazione eseguendo la classe `TestIterablePlain`.
 
-1. Add a new constructor to the newly created class that takes two arguments: an array of `T` elements and a `Predicate<T>` that will be used to filter the elements during the iteration.
-2. Modify the 1-ary constructor so that it calls the 2-ary constructor with a `Predicate<T>` that always returns `true`.
-3. Implement the `setIterationPolicy` method so that it sets the `Predicate<T>` that will be used to filter the elements during the iteration.
-4. Modify the implementation of the inner class (the `Iterator<T>` implementation) so that it uses the `Predicate<T>` to filter the elements during the iteration.
-5. Test the implementation by running the `TestIterableWithPolicy` class.
+## Parte 2: iterabile con politica
+
+1. Aggiungi un nuovo costruttore alla classe appena creata che prende due argomenti: un array di elementi `T` e un `Predicate<T>` che verrà utilizzato per filtrare gli elementi durante l'iterazione.
+2. Modifica il costruttore unario in modo che chiami il costruttore binario con un `Predicate<T>` che ritorna sempre `true`.
+3. Implementa il metodo `setIterationPolicy` in modo che imposti il `Predicate<T>` che verrà utilizzato per filtrare gli elementi durante l'iterazione.
+4. Modifica l'implementazione della classe interna (l'implementazione di `Iterator<T>`) in modo che utilizzi il `Predicate<T>` per filtrare gli elementi durante l'iterazione.
+5. Testa l'implementazione eseguendo la classe `TestIterableWithPolicy`.
+
+---
+
+| [<< Laboratorio 7](../README.md) | [Esercizio 1 >>](./71-custom-iterable/README.md) |

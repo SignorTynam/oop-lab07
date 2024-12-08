@@ -1,4 +1,6 @@
-# Classi anonime, classi innestate, enumerazioni
+# ESERCIZIO 2 - Classi anonime, classi innestate, enumerazioni
+
+| [<< Esercizio 1](../71-custom-iterable/README.md) | [Laboratorio 7](../README.md) | [Esercizio 1 >>](./71-custom-iterable/README.md) |
 
 **Fare correggere ad ogni parte dell'esercizio, non solo al termine di tutte le parti.**
 
